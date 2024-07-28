@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Inter:wght@100..900&display=swap" rel="stylesheet');
 body {
   font-family: "Manrope", sans-serif;
 }
@@ -99,14 +98,6 @@ body {
   font-weight: 700;
   line-height: 1.366;
   text-align: left;
-}
-
-.card-heading {
-  font-family: Inter;
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 58.09px;
-  text-align: center;
 }
 
 .test-sass {
@@ -216,39 +207,97 @@ body {
   opacity: 0px;
 }
 
-.remore-button {
-  width: 131px;
-  height: 28px;
-  top: 254px;
-  left: 141px;
-  gap: 0px;
-  opacity: 0px;
+.forward {
+  color: #D7AD4A;
+  width: 6px;
+  height: 4px;
 }
 
-.box-shadow {
-  box-shadow: 0px 3px 4px 0px rgba(123, 123, 123, 0.3098039216);
+nav {
+  background-color: #1C1C1C;
+  height: 81px;
 }
 
-.card-l {
-  width: 746px;
-  height: 372px;
-  top: 385px;
-  left: 113px;
-  gap: 0px;
-  opacity: 0px;
+.chevron-down {
+  width: 15px;
+  height: 15px;
 }
 
-.card-s {
-  width: 364px;
-  height: 373px;
-  top: 385px;
-  left: 931px;
-  gap: 0px;
-  opacity: 0px;
+.menu-bar-0 {
+  width: 253px;
+  height: 81px;
 }
 
-.box-shadow {
-  box-shadow: -3px 5px 5px 0px rgba(0, 0, 0, 0.1882352941) inset;
+.menu-bar-1 {
+  width: 129px;
+  height: 81px;
+}
+
+.menu-bar-1:hover {
+  background-color: #D7AD4A;
+  color: #000000;
+  transition: 0.3s ease-in-out;
+  width: 129px;
+  height: 81px;
+}
+
+.menu-bar-2 {
+  width: 129px;
+  height: 81px;
+}
+
+.menu-bar-2-dropdown {
+  background: #D7C9AC;
+  color: #000000;
+  width: 129px;
+  margin-top: 5px;
+}
+
+.menu-bar-2:hover {
+  background-color: #D7AD4A;
+  color: #000000;
+  transition: 0.3s ease-in-out;
+  width: 129px;
+  height: 81px;
+}
+
+.menu-bar-3 {
+  width: 129px;
+  height: 81px;
+}
+
+.menu-bar-3:hover {
+  background-color: #D7AD4A;
+  color: #000000;
+  transition: 0.3s ease-in-out;
+  width: 129px;
+  height: 81px;
+}
+
+.menu-bar-4 {
+  width: 129px;
+  height: 81px;
+}
+
+.menu-bar-4:hover {
+  background-color: #D7AD4A;
+  color: #000000;
+  transition: 0.3s ease-in-out;
+  width: 129px;
+  height: 81px;
+}
+
+.menu-bar-5 {
+  width: 129px;
+  height: 81px;
+}
+
+.menu-bar-5:hover {
+  background-color: #D7AD4A;
+  color: #000000;
+  transition: 0.3s ease-in-out;
+  width: 129px;
+  height: 81px;
 }
 
 /*# sourceMappingURL=styles.css.map */
