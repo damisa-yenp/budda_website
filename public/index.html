@@ -1,104 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
-  <link rel="stylesheet" href="/src/css/tailwind.output.css">
-  <link rel="stylesheet" href="/src/css/styles.css">
-  <title>Test Sass and Tailwind</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="../src/css/tailwind.output.css">
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <title>หน้าแรก (ประวัติของเทพแต่ละองค์)</title>
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <nav class="text-white thai-sarabun-body-bold flex justify-evenly">
-      <button class="menu-bar-0">ธรรมะสเบียงบุญ</button>
-      <ul class="flex">
-        <li>
-          <a href="">
-            <button class="menu-bar-1">หน้าแรก</button>
-          </a>
-        </li>
-        <li>
-          <div id="dropdown-menu-bar-2-button">
-            <div id="test" class="menu-bar-2 select-none flex justify-evenly items-center">
-              <span>ศึกษาธรรม</span>
-              <img class="chevron-down" src="/src/assets/svg/chevron-down.svg" alt="">
+    <header>
+      <nav class="text-white font-sarabun font-bold text-[16px] flex justify-evenly">
+        <button class="menu-bar-0">ธรรมะสเบียงบุญ</button>
+        <ul class="flex">
+          <li>
+            <a href>
+              <button class="menu-bar-1">หน้าแรก</button>
+            </a>
+          </li>
+          <li>
+            <div id="dropdown-menu-bar-2-button">
+              <div id="test"
+                class="menu-bar-2 select-none flex justify-evenly items-center">
+                <span>ศึกษาธรรม</span>
+                <img class="chevron-down"
+                  src="../src/assets/svg/chevron-down.svg" alt>
+              </div>
+              <div id="dropdown-menu-bar-2"
+                class="relative z-10 menu-bar-2-dropdown font-sarabun text-[16px] flex flex-col hidden">
+                <a
+                  class="cursor-pointer hover:bg-gray-300 p-3 flex items-center"
+                  href>หลักธรรม</a>
+                <a
+                  class="cursor-pointer hover:bg-gray-300 p-3 flex items-center"
+                  href>หลักปฏิบัติ</a>
+                <a
+                  class="cursor-pointer hover:bg-gray-300 p-3 flex items-center"
+                  href>คติธรรม</a>
+              </div>
             </div>
-            <div id="dropdown-menu-bar-2" class="menu-bar-2-dropdown thai-sarabun-body flex flex-col hidden">
-              <a class="cursor-pointer hover:bg-gray-300 p-3 flex items-center" href="">หลักธรรม</a>
-              <a class="cursor-pointer hover:bg-gray-300 p-3 flex items-center" href="">หลักปฏิบัติ</a>
-              <a class="cursor-pointer hover:bg-gray-300 p-3 flex items-center" href="">คติธรรม</a>
+          </li>
+          <li>
+            <a href>
+              <button class="menu-bar-3">พิกัดบุญ</button>
+            </a>
+          </li>
+          <li>
+            <a href>
+              <button class="menu-bar-4">ปฎิทินบุญ</button>
+            </a>
+          </li>
+          <li>
+            <a href>
+              <button class="menu-bar-5">เกี่ยวกับเรา</button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <img class="relative z-0 object-cover h-[436px] w-full object-bottom"
+        src="../src/assets/images/index/tai-hong-kong-shrine.png" alt>
+    </header>
+
+    <div class="main-container">
+
+      <div class>
+
+        <div
+          class="lotus-title-background-image bg-cover bg-center bg-right w-full h-[456px] flex justify-center items-center">
+          <span
+            class="font-sarabun text-[48px]">ยินดีต้อนรับเข้าสู่ธรรมะเสบียงบุญ</span>
+        </div>
+
+        <div
+          class="background-gradient lotus-background-image bg-cover bg-center bg-right w-full h-[659px] flex justify-center items-center gap-2">
+          <img src="../src/assets/images/index/Ellipse 4.png" alt
+            class="content object-none w-[405px] h-[400px]">
+          <img class="life-link left-[277px] top-[443px]"
+            src="../src/assets/images/index/life-link.png" alt>
+          <div
+            class="content h-[379px] w-[746px] pl-[40px] bg-white bg-opacity-80 flex flex-col justify-around rounded-lg card-shadow">
+            <div>
+              <div
+                class="font-sarabun text-[48px]">เจ้าแม่กวนอิม
+              </div>
+              <p
+                class="pt-[20px] font-sarabun text-[16px]">พระโพธิสัตว์ที่มีจิตใจเมตตาต่อชาวโลกตามหลักของพระพุทธศาสนา<br>
+                นิกายมหายาน
+              </p>
             </div>
+            <button
+              class="inter-button w-[131px] h-[28px] bg-[#D7AD4A] text-black shadow-md">
+              Read More
+            </button>
           </div>
-        </li>
-        <li>
-          <a href="">
-            <button class="menu-bar-3">พิกัดบุญ</button>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <button class="menu-bar-4">ปฎิทินบุญ</button>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <button class="menu-bar-5">เกี่ยวกับเรา</button>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+        </div>
 
+        <div
+          class="background-gradient mountain-background-image bg-cover bg-center bg-right w-full h-[659px] flex justify-center items-center gap-2 flex-row-reverse">
+          <img src="../src/assets/images/index/Ellipse 5.png" alt
+            class="content rounded-full object-none w-[364px] h-[356px]">
+          <div
+            class="content h-[379px] w-[746px] pl-[40px] bg-white bg-opacity-80 flex flex-col justify-around rounded-lg card-shadow">
+            <div>
+              <div
+                class="font-sarabun text-[48px]">เทพเจ้าเห้งเจีย
+              </div>
+              <p
+                class="pt-[20px] font-sarabun text-[16px]">เทพเจ้าเห้งเจีย
+                เป็นผู้ทรงอิทธิฤทธิ์มีพลังมากมาย เป็นตัวละครหนึ่งใน “ไซอิ๋ว”<br>
+                พอนวนิยายชุดดังกล่าวได้รับการตอบรับไปทั่วจีน
+                ทำให้มีผู้คนที่นับถือ ยกให้เป็น<br>
+                เทพในนาม “ฉีเทียนต้าเสิ้ง”</p>
+            </div>
+            <button
+              class="inter-button w-[131px] h-[28px] bg-[#D7AD4A] text-black shadow-md">
+              Read More
+            </button>
+          </div>
+        </div>
 
+        <div
+          class="background-gradient moon-background-image bg-cover bg-center bg-right w-full h-[643px] flex justify-center items-center gap-2">
+          <img src="../src/assets/images/index/Ellipse 6.png" alt
+            class="content object-none w-[364px] h-[356px]">
+          <div
+            class="content h-[379px] w-[746px] pl-[40px] bg-white bg-opacity-80 flex flex-col justify-around rounded-lg card-shadow">
+            <div>
+              <div
+                class="font-sarabun text-[48px]">ไต้ฮงกงโจวซือ
+              </div>
+              <p
+                class="pt-[20px] font-sarabun text-[16px]">ไต้ฮงกงโจวซือ<br>
+                ซึ่งเป็นที่เคารพนับถือของชาวจีนในแผ่นดินใหญ่และชาวไทยเชื้อสายจีน<br>
+                สร้างคุณงามความดีจนบรรดาศิษย์จัดตั้งมูลนิธิมีชื่อเสียงและรู้จักกันดีโดยใช้ชื่อว่า<br>
+                “มูลนิธิ ฮั่วเคี้ยวป่อเต๊กเซี่ยตึ้ง”</p>
+            </div>
+            <button
+              class="inter-button w-[131px] h-[28px] bg-[#D7AD4A] text-black shadow-md">
+              Read More
+            </button>
+          </div>
+        </div>
 
+        <div
+          class="mountain2-background-image bg-cover bg-center bg-right w-full h-[590px] flex justify-center items-center my-[98px]">
+          <div class="flex justify-center">
+            <!-- the big circle title -->
+            <div
+              class="relative z-20 circle-title absolute w-[785px] h-[785px] bg-white rounded-full flex items-center justify-center">
+              <span class="font-sarabun text-[32px]">ทำดีได้ความดี
+                ทำชั่วได้ความชั่วทำเหตุให้เกิดทุกข์<br>
+                ก็ได้ความทุกข์ทำเหตุให้เกิดสุข ก็ได้ความสุข</span>
 
+            </div>
 
-  <h1 class="text-3xl font-bold underline">Hello, Tailwind CSS!</h1>
-  <div class="test-sass">This is a test for Sass</div>
+          </div>
 
-  <p class="eng-manrope-body">This is a paragraph text styled with 'Eng/Manrope_Body' typography.</p>
+        </div>
 
+        <div class="py-[90px]">
+          <span
+            class="block font-sarabun font-bold text-[48px] pl-[156px]">เรื่องที่ท่านอาจสนใจ</span>
+          <div
+            class="my-[80px] gap-3 card-container flex justify-center flex-wrap">
+            <div class="card mt-[10px]">
+              <img class="h-[190px] w-[364px] object-cover"
+                src="../src/assets/images/common/d00ff54bd06afb62c333086ac2b06965.jpg"
+                alt>
+              <div class="card-description">
+                <div
+                  class="mt-[20px]  font-sarabun font-bold text-[16px]">บทนมัสการพระพุทธเจ้า
+                </div>
+                <p
+                  class="mt-[20px] h-[80px] w-[340px] font-sarabun text-[16px]">พระผู้มีพระภาคเจ้า
+                  เป็นพระอรหันต์<br>
+                  ดับเพลิงกิเลสเพลิงทุกข์สิ้นเชิง
+                </p>
+                <button
+                  class="inter-button w-[131px] h-[28px] bg-[#D7AD4A] text-black rounded-[10px] shadow-md">
+                  Read More
+                </button>
+              </div>
+            </div>
 
-  <p class="thai-sarabun-body">นี่คือข้อความภาษาไทยที่ใช้สไตล์ 'Thai/Sarabun_Body'</p>
-  <h1 class="thai-sarabun-head">หัวข้อภาษาไทย</h1>
-  <h1 class="eng-manrope-head">English Heading</h1>
-  <h2 class="thai-sarabun-subhead">ไทย ย่อหน้าหัวข้อย่อย</h2>
-  <h2 class="eng-manrope-subhead">English Subheading Text</h2>
-  <p class="eng-manrope-body-bold">This is a bold paragraph text styled with 'Eng/Manrope_BodyBold'.</p>
-  <p class="thai-sarabun-body-bold">นี่คือข้อความตัวหนาภาษาไทยที่ใช้สไตล์ 'Thai/Sarabun_BodyBold'</p>
-  <h1 class="thai-sarabun-head-bold">หัวข้อสำคัญภาษาไทย</h1>
-  <h1 class="eng-manrope-head-bold">Important English Heading</h1>
-  <h2 class="thai-sarabun-subhead-bold">หัวข้อย่อยภาษาไทย</h2>
-  <h2 class="eng-manrope-subhead-bold">Engaging Subheading</h2>
+            <div class="card mt-[10px]">
+              <img class="h-[190px] w-[364px] object-cover object-bottom"
+                src="../src/assets/images/common/4f4ebc18a1f4e9c40ded62907d1bd488.jpg"
+                alt>
+              <div class="card-description">
+                <div
+                  class="mt-[20px]  font-sarabun font-bold text-[16px]">บทนมัสการพระพุทธเจ้า
+                </div>
+                <p
+                  class="mt-[20px] h-[80px] w-[340px] font-sarabun text-[16px]">พระผู้มีพระภาคเจ้า
+                  เป็นพระอรหันต์<br>
+                  ดับเพลิงกิเลสเพลิงทุกข์สิ้นเชิง
+                </p>
+                <button
+                  class="inter-button w-[131px] h-[28px] bg-[#D7AD4A] text-black rounded-[10px] shadow-md">
+                  Read More
+                </button>
+              </div>
+            </div>
 
-  <button class="forward-arrow-button bg-no-repeat bg-center">
-  </button>
+            <div class="card mt-[10px]">
+              <img class="h-[190px] w-[364px] object-cover"
+                src="../src/assets/images/common/632bb993801bed73b4d3cef1d01ed3b8.jpg"
+                alt>
+              <div class="card-description">
+                <div
+                  class="mt-[20px]  font-sarabun font-bold text-[16px]">บทนมัสการพระพุทธเจ้า
+                </div>
+                <p
+                  class="mt-[20px] h-[80px] w-[340px] font-sarabun text-[16px]">พระผู้มีพระภาคเจ้า
+                  เป็นพระอรหันต์<br>
+                  ดับเพลิงกิเลสเพลิงทุกข์สิ้นเชิง
+                </p>
+                <button
+                  class="inter-button w-[131px] h-[28px] bg-[#D7AD4A] text-black rounded-[10px] shadow-md">
+                  Read More
+                </button>
+              </div>
+            </div>
 
-  <button class="arrow-up-button bg-no-repeat bg-center">
-  </button>
+            <div class="card mt-[10px]">
+              <img class="h-[190px] w-[364px] object-cover"
+                src="../src/assets/images/common/500a10a5a71318425cdd760b7ea336a3.png"
+                alt>
+              <div class="card-description">
+                <div
+                  class="mt-[20px]  font-sarabun font-bold text-[16px]">คติธรรม
+                </div>
+                <p
+                  class="mt-[20px] h-[80px] w-[340px] font-sarabun text-[16px]">การไม่อยากได้
+                  ไม่อยากมี ไม่อยากเป็นเจ้าของ<br>
+                  ต่อสิ่งใดๆ สิ่งนั้นแหละจะทำให้เราเป็นสุขได้
+                </p>
+                <button
+                  class="inter-button w-[131px] h-[28px] bg-[#D7AD4A] text-black rounded-[10px] shadow-md">
+                  Read More
+                </button>
+              </div>
+            </div>
 
-  <button class="arrow-down-button bg-no-repeat bg-center">
-  </button>
+            <div class="card mt-[10px]">
+              <img class="h-[190px] w-[364px] object-cover"
+                src="../src/assets/images/common/8245f2c9ac6c22d3472fdc038274db7e.png"
+                alt>
+              <div class="card-description">
+                <div
+                  class="mt-[20px]  font-sarabun font-bold text-[16px]">วัดมังกรกมลาวาส
+                </div>
+                <p
+                  class="mt-[20px] h-[80px] w-[340px] font-sarabun text-[16px]">คนทั่วไปจะเรียกกันสั้น
+                  ๆ ว่า วัดมังกร<br> ส่วนคนไทยเชื้อสายจีนจะเรียกว่า
+                  วัดเล่งเน่ยยี่
+                </p>
+                <button
+                  class="inter-button w-[131px] h-[28px] bg-[#D7AD4A] text-black rounded-[10px] shadow-md">
+                  Read More
+                </button>
+              </div>
+            </div>
 
-  <button class="arrow-left-button bg-no-repeat bg-center">
-  </button>
+            <div class="card mt-[10px]">
+              <img class="h-[190px] w-[364px] object-cover object-bottom"
+                src="../src/assets/images/common/0d0c9ba3b1562adaf5d6156677fe2d08.png"
+                alt>
+              <div class="card-description">
+                <div
+                  class="mt-[20px]  font-sarabun font-bold text-[16px]">วันมาฆบูชา
+                </div>
+                <p
+                  class="mt-[20px] h-[80px] w-[340px] font-sarabun text-[16px]">เป็นวันที่พระอรหันตสัมมาสัมพุทธเจ้าทรง<br>
+                  ประทาน พระโอวาทสำคัญ อันถือได้ว่า<br>
+                  เป็นหัวใจของคำสอนในพระพุทธศาสนา
+                </p>
+                <button
+                  class="inter-button w-[131px] h-[28px] bg-[#D7AD4A] text-black rounded-[10px] shadow-md">
+                  Read More
+                </button>
+              </div>
+            </div>
 
-  <button class="arrow-right-button bg-no-repeat bg-center">
-  </button>
+          </div>
+        </div>
 
-  <button class="home-button bg-no-repeat bg-center">
-  </button>
+      </div>
 
-  <button class="up-button bg-no-repeat bg-center">
-  </button>
+      <footer>
+        <div class="font-sarabun text-[16px] h-[347px] bg-[#7C6C4B]">
+          <ul class="mx-[8%] pt-[100px] flex flex-wrap">
+            <li class="mb-[10px] mr-[80px]">
+              <a class="w-[152px] text-white flex items-center justify-between"
+                href>
+                <span>หน้าแรก</span>
+                <img class="h-[20px] rotate-[270deg]"
+                  src="../../src/assets/svg/chevron-down-white.svg" alt>
+              </a>
+            </li>
+            <li class="mb-[10px] mr-[80px]">
+              <a class="w-[152px] text-white flex items-center justify-between"
+                href>
+                <span>บทสวดมนต์</span>
+                <img class="h-[20px] rotate-[270deg]"
+                  src="../../src/assets/svg/chevron-down-white.svg" alt>
+              </a>
+            </li>
+            <li class="mb-[10px] mr-[80px]">
+              <a class="w-[152px] text-white flex items-center justify-between"
+                href>
+                <span>เจ้าแม่กวนอิม</span>
+                <img class="h-[20px] rotate-[270deg]"
+                  src="../../src/assets/svg/chevron-down-white.svg" alt>
+              </a>
+            </li>
+            <li class="mb-[10px] mr-[80px]">
+              <a class="w-[152px] text-white flex items-center justify-between"
+                href>
+                <span>คติธรรม</span>
+                <img class="h-[20px] rotate-[270deg]"
+                  src="../../src/assets/svg/chevron-down-white.svg" alt>
+              </a>
+            </li>
+            <li class="mb-[10px] mr-[80px]">
+              <a class="w-[152px] text-white flex items-center justify-between"
+                href>
+                <span>พิกัดบุญ </span>
+                <img class="h-[20px] rotate-[270deg]"
+                  src="../../src/assets/svg/chevron-down-white.svg" alt>
+              </a>
+            </li>
+            <li class="mb-[10px] mr-[80px]">
+              <a class="w-[152px] text-white flex items-center justify-between"
+                href>
+                <span>หลักธรรม</span>
+                <img class="h-[20px] rotate-[270deg]"
+                  src="../../src/assets/svg/chevron-down-white.svg" alt>
+              </a>
+            </li>
+            <li class="mb-[10px] mr-[80px]">
+              <a class="w-[152px] text-white flex items-center justify-between"
+                href>
+                <span>หลักปฏิบัติ</span>
+                <img class="h-[20px] rotate-[270deg]"
+                  src="../../src/assets/svg/chevron-down-white.svg" alt>
+              </a>
+            </li>
+            <li class="mb-[10px] mr-[80px]">
+              <a class="w-[152px] text-white flex items-center justify-between"
+                href>
+                <span>เทพเจ้าเห้งเจีย</span>
+                <img class="h-[20px] rotate-[270deg]"
+                  src="../../src/assets/svg/chevron-down-white.svg" alt>
+              </a>
+            </li>
+            <li class="mb-[10px] mr-[80px]">
+              <a class="w-[152px] text-white flex items-center justify-between"
+                href>
+                <span>เกี่ยวกับเรา</span>
+                <img class="h-[20px] rotate-[270deg]"
+                  src="../../src/assets/svg/chevron-down-white.svg" alt>
+              </a>
+            </li>
+            <li class="mb-[10px] mr-[80px]">
+              <a class="w-[152px] text-white flex items-center justify-between"
+                href>
+                <span>ปฎิทินบุญ</span>
+                <img class="h-[20px] rotate-[270deg]"
+                  src="../../src/assets/svg/chevron-down-white.svg" alt>
+              </a>
+            </li>
+            <li class="mb-[10px] mr-[80px]">
+              <a class="w-[152px] text-white flex items-center justify-between"
+                href>
+                <span>ไต้ฮงกงโจวซือ</span>
+                <img class="h-[20px] rotate-[270deg]"
+                  src="../../src/assets/svg/chevron-down-white.svg" alt>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="h-[85px] bg-black"></div>
+      </footer>
 
+      <script src="../../src/js/main.js"></script>
+    </body>
 
-
-  <script src="/src/js/main.js"></script>
-</body>
-
-</html>
+  </html>
