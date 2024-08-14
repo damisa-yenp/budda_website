@@ -519,12 +519,6 @@ video {
 .relative{
   position: relative;
 }
-.sticky{
-  position: sticky;
-}
-.left-\[1323px\]{
-  left: 1323px;
-}
 .left-\[153px\]{
   left: 153px;
 }
@@ -540,14 +534,8 @@ video {
 .top-\[443px\]{
   top: 443px;
 }
-.top-\[7290px\]{
-  top: 7290px;
-}
 .top-\[735px\]{
   top: 735px;
-}
-.top-\[7381px\]{
-  top: 7381px;
 }
 .z-0{
   z-index: 0;
