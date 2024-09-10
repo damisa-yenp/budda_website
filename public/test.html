@@ -1,104 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="/src/css/tailwind.output.css" />
+    <link rel="stylesheet" href="/src/css/styles.css" />
+    <title>Test Sass and Tailwind</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
-  <link rel="stylesheet" href="/src/css/tailwind.output.css">
-  <link rel="stylesheet" href="/src/css/styles.css">
-  <title>Test Sass and Tailwind</title>
-</head>
-
-<body>
-
-  <header>
-    <nav class="text-white thai-sarabun-body-bold flex justify-evenly">
-      <button class="menu-bar-0">ธรรมะสเบียงบุญ</button>
-      <ul class="flex">
-        <li>
-          <a href="">
-            <button class="menu-bar-1">หน้าแรก</button>
-          </a>
-        </li>
-        <li>
-          <div id="dropdown-menu-bar-2-button">
-            <div id="test" class="menu-bar-2 select-none flex justify-evenly items-center">
-              <span>ศึกษาธรรม</span>
-              <img class="chevron-down" src="/src/assets/svg/chevron-down.svg" alt="">
+  <body>
+    <header>
+      <nav class="text-white thai-sarabun-body-bold flex justify-evenly">
+        <button class="menu-bar-0">ธรรมะสเบียงบุญ</button>
+        <ul class="flex">
+          <li>
+            <a href="">
+              <button class="menu-bar-1">หน้าแรก</button>
+            </a>
+          </li>
+          <li>
+            <div id="dropdown-menu-bar-2-button">
+              <div
+                id="test"
+                class="menu-bar-2 select-none flex justify-evenly items-center"
+              >
+                <span>ศึกษาธรรม</span>
+                <img
+                  class="chevron-down"
+                  src="/src/assets/svg/chevron-down.svg"
+                  alt=""
+                />
+              </div>
+              <div
+                id="dropdown-menu-bar-2"
+                class="menu-bar-2-dropdown thai-sarabun-body flex flex-col hidden"
+              >
+                <a
+                  class="cursor-pointer hover:bg-gray-300 p-3 flex items-center"
+                  href=""
+                  >หลักธรรม</a
+                >
+                <a
+                  class="cursor-pointer hover:bg-gray-300 p-3 flex items-center"
+                  href=""
+                  >หลักปฏิบัติ</a
+                >
+                <a
+                  class="cursor-pointer hover:bg-gray-300 p-3 flex items-center"
+                  href=""
+                  >คติธรรม</a
+                >
+              </div>
             </div>
-            <div id="dropdown-menu-bar-2" class="menu-bar-2-dropdown thai-sarabun-body flex flex-col hidden">
-              <a class="cursor-pointer hover:bg-gray-300 p-3 flex items-center" href="">หลักธรรม</a>
-              <a class="cursor-pointer hover:bg-gray-300 p-3 flex items-center" href="">หลักปฏิบัติ</a>
-              <a class="cursor-pointer hover:bg-gray-300 p-3 flex items-center" href="">คติธรรม</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <a href="">
-            <button class="menu-bar-3">พิกัดบุญ</button>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <button class="menu-bar-4">ปฎิทินบุญ</button>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <button class="menu-bar-5">เกี่ยวกับเรา</button>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+          </li>
+          <li>
+            <a href="">
+              <button class="menu-bar-3">พิกัดบุญ</button>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <button class="menu-bar-4">ปฎิทินบุญ</button>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <button class="menu-bar-5">เกี่ยวกับเรา</button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
+    <h1 class="text-3xl font-bold underline">Hello, Tailwind CSS!</h1>
+    <div class="test-sass">This is a test for Sass</div>
 
+    <p class="eng-manrope-body">
+      This is a paragraph text styled with 'Eng/Manrope_Body' typography.
+    </p>
 
+    <p class="thai-sarabun-body">
+      นี่คือข้อความภาษาไทยที่ใช้สไตล์ 'Thai/Sarabun_Body'
+    </p>
+    <h1 class="thai-sarabun-head">หัวข้อภาษาไทย</h1>
+    <h1 class="eng-manrope-head">English Heading</h1>
+    <h2 class="thai-sarabun-subhead">ไทย ย่อหน้าหัวข้อย่อย</h2>
+    <h2 class="eng-manrope-subhead">English Subheading Text</h2>
+    <p class="eng-manrope-body-bold">
+      This is a bold paragraph text styled with 'Eng/Manrope_BodyBold'.
+    </p>
+    <p class="thai-sarabun-body-bold">
+      นี่คือข้อความตัวหนาภาษาไทยที่ใช้สไตล์ 'Thai/Sarabun_BodyBold'
+    </p>
+    <h1 class="thai-sarabun-head-bold">หัวข้อสำคัญภาษาไทย</h1>
+    <h1 class="eng-manrope-head-bold">Important English Heading</h1>
+    <h2 class="thai-sarabun-subhead-bold">หัวข้อย่อยภาษาไทย</h2>
+    <h2 class="eng-manrope-subhead-bold">Engaging Subheading</h2>
 
+    <button class="forward-arrow-button bg-no-repeat bg-center"></button>
 
-  <h1 class="text-3xl font-bold underline">Hello, Tailwind CSS!</h1>
-  <div class="test-sass">This is a test for Sass</div>
+    <button class="arrow-up-button bg-no-repeat bg-center"></button>
 
-  <p class="eng-manrope-body">This is a paragraph text styled with 'Eng/Manrope_Body' typography.</p>
+    <button class="arrow-down-button bg-no-repeat bg-center"></button>
 
+    <button class="arrow-left-button bg-no-repeat bg-center"></button>
 
-  <p class="thai-sarabun-body">นี่คือข้อความภาษาไทยที่ใช้สไตล์ 'Thai/Sarabun_Body'</p>
-  <h1 class="thai-sarabun-head">หัวข้อภาษาไทย</h1>
-  <h1 class="eng-manrope-head">English Heading</h1>
-  <h2 class="thai-sarabun-subhead">ไทย ย่อหน้าหัวข้อย่อย</h2>
-  <h2 class="eng-manrope-subhead">English Subheading Text</h2>
-  <p class="eng-manrope-body-bold">This is a bold paragraph text styled with 'Eng/Manrope_BodyBold'.</p>
-  <p class="thai-sarabun-body-bold">นี่คือข้อความตัวหนาภาษาไทยที่ใช้สไตล์ 'Thai/Sarabun_BodyBold'</p>
-  <h1 class="thai-sarabun-head-bold">หัวข้อสำคัญภาษาไทย</h1>
-  <h1 class="eng-manrope-head-bold">Important English Heading</h1>
-  <h2 class="thai-sarabun-subhead-bold">หัวข้อย่อยภาษาไทย</h2>
-  <h2 class="eng-manrope-subhead-bold">Engaging Subheading</h2>
+    <button class="arrow-right-button bg-no-repeat bg-center"></button>
 
-  <button class="forward-arrow-button bg-no-repeat bg-center">
-  </button>
+    <button class="home-button bg-no-repeat bg-center"></button>
 
-  <button class="arrow-up-button bg-no-repeat bg-center">
-  </button>
+    <button class="up-button bg-no-repeat bg-center"></button>
 
-  <button class="arrow-down-button bg-no-repeat bg-center">
-  </button>
+    <svg
+      width="89"
+      height="89"
+      viewBox="0 0 89 89"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <rect width="89" height="89" fill="url(#pattern0_873_4304)" />
+      <defs>
+        <pattern
+          id="pattern0_873_4304"
+          patternContentUnits="objectBoundingBox"
+          width="1"
+          height="1"
+        >
+          <use xlink:href="#image0_873_4304" transform="scale(0.01)" />
+        </pattern>
+        <image
+          style="background-color: blue !important"
+          id="image0_873_4304"
+          width="100"
+          height="100"
+          xlink:href="data:image/png;base64,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"
+        />
+      </defs>
+    </svg>
 
-  <button class="arrow-left-button bg-no-repeat bg-center">
-  </button>
-
-  <button class="arrow-right-button bg-no-repeat bg-center">
-  </button>
-
-  <button class="home-button bg-no-repeat bg-center">
-  </button>
-
-  <button class="up-button bg-no-repeat bg-center">
-  </button>
-
-
-
-  <script src="/src/js/main.js"></script>
-</body>
-
+    <script src="/src/js/main.js"></script>
+  </body>
 </html>
